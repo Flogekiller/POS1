@@ -45,8 +45,5 @@ public class PrimeSieve implements EratosthenesPrimeSieve
         }
         return primeList;
     }
-    private void TestCommit()
-    {
-        
-    }
+ 
 }
