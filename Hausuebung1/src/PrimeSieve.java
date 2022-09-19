@@ -8,6 +8,7 @@ public class PrimeSieve implements EratosthenesPrimeSieve
     public static void main(String[] args) {
         PrimeSieve primeSieve = new PrimeSieve(100);
         primeSieve.primeAlgorithmus();
+        primeSieve.isPrime(19);
     }
     public PrimeSieve(int obergraenze)
     {
@@ -16,7 +17,8 @@ public class PrimeSieve implements EratosthenesPrimeSieve
 
     @Override
     public boolean isPrime(int p) {
-        
+        System.out.println(primeAlgorithmus()[p]);
+       return primeAlgorithmus()[p];
     }
 
     @Override
@@ -37,7 +39,7 @@ public class PrimeSieve implements EratosthenesPrimeSieve
 
                 }
             }
-            System.out.println(i + " " + primeList[i]);
+
         }
         return primeList;
     }
